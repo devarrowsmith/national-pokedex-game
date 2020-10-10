@@ -4,9 +4,12 @@ import PokemonSprite from './PokemonSprite';
 import PokemonName from './PokemonName';
 
 const StyledBlock = styled.div`
+  height: 130px;
+  width: 130px;
+  margin: 0;
+  padding: 0;
   background-color: lightskyblue;
-  height: 100px;
-  width: 100px;
+
 `;
 
 const Block = () => (
