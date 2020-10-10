@@ -1,8 +1,12 @@
 import React from 'react';
 import Header from './Header';
+import Grid from './Grid';
 
 const Page = () => (
-  <Header />
+  <>
+    <Header />
+    <Grid />
+  </>
 );
 
 export default Page;
