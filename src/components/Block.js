@@ -9,7 +9,6 @@ const StyledBlock = styled.div`
   margin: 0;
   padding: 0;
   background-color: lightskyblue;
-
 `;
 
 const Block = () => (
