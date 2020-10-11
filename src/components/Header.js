@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from './Title';
-import Question from './Question';
+import Message from './Message';
 import SettingButtons from './SettingButtons';
 
 const Header = () => (
   <>
     <Title />
-    <Question />
+    <Message />
     <SettingButtons />
   </>
 );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Block from './Block';
 
 const StyledGrid = styled.div`
-  width: 100vw;
+  width: 100%;
   background-color: darkslategrey;
   min-height: 300px;
 `;
