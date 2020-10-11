@@ -8,10 +8,9 @@ const dexGenerator = (blocks) => {
         dex.push(newDex);
       }
     }
-    console.log(dex);
     return dex;
   };
-  createDex();
+  return createDex();
 };
 
 export default dexGenerator;
