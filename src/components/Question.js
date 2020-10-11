@@ -9,7 +9,7 @@ const StyledQuestion = styled.h2`
   text-align: center;
 
   span {
-    color: #FF55FF;
+    color: #FFFF33;
   }
 `;
 

@@ -4,7 +4,7 @@ import Answer from './Answer';
 
 const Message = () => {
   return (
-    <Answer />
+    <Question />
   )
 };
 

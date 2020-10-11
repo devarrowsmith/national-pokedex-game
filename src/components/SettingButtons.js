@@ -1,14 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import ResetButton from './ResetButton';
+import DifficultyButtons from './DifficultyButtons';
 
 const SettingButtonsBar = styled.div`
   width: 100%;
-  height: 10px;
-  background-color: red;
+  height: 6vh;
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: space-between;
 `;
 
 const SettingButtons = () => (
-  <SettingButtonsBar />
+  <SettingButtonsBar>
+    <ResetButton />
+    <DifficultyButtons />
+  </SettingButtonsBar>
 );
 
 export default SettingButtons;

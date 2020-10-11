@@ -6,8 +6,7 @@ import PokemonName from './PokemonName';
 const StyledBlock = styled.div`
   height: 130px;
   width: 130px;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
   background-color: lightskyblue;
 `;
 
