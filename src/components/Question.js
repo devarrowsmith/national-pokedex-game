@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledQuestion = styled.h2`
+const StyledQuestion = styled.h3`
   margin: 0;
   padding: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.4em;
   text-align: center;
 
@@ -15,12 +15,9 @@ const StyledQuestion = styled.h2`
 
 const Question = () => (
   <StyledQuestion>
-    <h3>
-      Which Pokémon has National Pokedex Number
-      <span> 103 </span>
-      ?
-    </h3>
-
+    Which Pokémon has National Pokedex Number
+    <span> 103 </span>
+    ?
   </StyledQuestion>
 );
 export default Question;
