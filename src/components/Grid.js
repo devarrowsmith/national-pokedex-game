@@ -7,12 +7,15 @@ const StyledGrid = styled.div`
   background-color: darkslategrey;
   min-height: 300px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
 `;
 
 const Grid = () => (
   <StyledGrid>
+    <Block />
+    <Block />
+    <Block />
     <Block />
   </StyledGrid>
 );
