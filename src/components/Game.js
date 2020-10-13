@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Grid from './Grid';
 
-const Page = () => {
+const Game = () => {
   const [difficulty, setDifficulty] = useState({
     mode: 'easy',
     blocks: 6,
@@ -15,4 +15,4 @@ const Page = () => {
     </>
   );
 };
-export default Page;
+export default Game;

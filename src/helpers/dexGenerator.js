@@ -1,5 +1,5 @@
 const dexGenerator = (blocks) => {
-  const randomDex = () => Math.floor(Math.random() * 10) + 1;
+  const randomDex = () => Math.floor(Math.random() * 893) + 1;
   const createDex = () => {
     const dex = [];
     while (dex.length < blocks) {
