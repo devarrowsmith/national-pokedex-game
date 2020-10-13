@@ -3,10 +3,12 @@ import Title from './Title';
 import Message from './Message';
 import SettingButtons from './SettingButtons';
 
-const Header = () => (
+const Header = ({ answer }) => (
   <>
     <Title />
-    <Message />
+    <Message
+      answer={answer}
+    />
     <SettingButtons />
   </>
 );

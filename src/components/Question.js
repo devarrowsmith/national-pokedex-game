@@ -13,10 +13,14 @@ const StyledQuestion = styled.h3`
   }
 `;
 
-const Question = () => (
+const Question = ({ answer }) => (
   <StyledQuestion>
     Which Pokémon has National Pokedex Number
-    <span> 103 </span>
+    <span>
+      {' '}
+      {answer}
+      {' '}
+    </span>
     ?
   </StyledQuestion>
 );
