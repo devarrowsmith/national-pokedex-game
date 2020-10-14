@@ -10,18 +10,26 @@ const Game = () => {
   });
 
   const [pokemonData, setPokemonData] = useState({
-    answer: null,
-    pokemon: [],
+    answer: 132,
+    pokemon: [{
+      species: {
+        name: 'ditto',
+      },
+      sprites: {
+        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
+      },
+    }
+    ],
   });
 
   useEffect(() => {
-    async function initData() {
-      const data = await pokemonGenerator();
-      setPokemonData({
-        answer: data.answer,
-        pokemon: data.pokemon,
-      });
-    } initData();
+    // async function initData() {
+    //   const data = await pokemonGenerator();
+    //   setPokemonData({
+    //     answer: data.answer,
+    //     pokemon: data.pokemon,
+    //   });
+    // } initData();
   }, []);
 
   return (
@@ -30,7 +38,9 @@ const Game = () => {
         answer={pokemonData.answer}
         setDifficulty={setDifficulty}
       />
-      <Grid difficulty={difficulty} />
+      <Grid
+        pokemon={pokemonData.pokemon}
+      />
     </>
   );
 };

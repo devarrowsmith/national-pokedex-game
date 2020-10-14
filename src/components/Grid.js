@@ -10,12 +10,17 @@ const StyledGrid = styled.div`
   justify-content: space-evenly;
 `;
 
-const Grid = () => (
+const Grid = ({ pokemon }) => (
   <StyledGrid>
-    <Block />
-    <Block />
-    <Block />
-    <Block />
+    {!pokemon[0]
+      ? (<h1>loading...</h1>)
+      : (pokemon.map((singlePokemon) => (
+        <Block
+          key={singlePokemon.species.name}
+          pokemonName={singlePokemon.species.name}
+          pokemonSprite={singlePokemon.sprites.front_default}
+        />
+      )))}
   </StyledGrid>
 );
 

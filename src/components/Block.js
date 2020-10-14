@@ -10,10 +10,15 @@ const StyledBlock = styled.div`
   background-color: lightskyblue;
 `;
 
-const Block = () => (
+const Block = ({ pokemonName, pokemonSprite }) => (
   <StyledBlock>
-    <PokemonSprite />
-    <PokemonName />
+    <PokemonSprite
+      sprite={pokemonSprite}
+      name={pokemonName}
+    />
+    <PokemonName
+      name={pokemonName}
+    />
   </StyledBlock>
 );
 

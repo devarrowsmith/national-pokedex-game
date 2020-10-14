@@ -8,9 +8,9 @@ const StyledName = styled.p`
   text-align: center;
 `;
 
-const PokemonSprite = () => (
+const PokemonSprite = ({ name }) => (
   <StyledName>
-    Fletchinder
+    {name}
   </StyledName>
 );
 
