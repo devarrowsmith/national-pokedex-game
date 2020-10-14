@@ -4,6 +4,8 @@ import Grid from './Grid';
 import pokemonGenerator from '../helpers/pokemonGenerator';
 
 const Game = () => {
+  const [busy, setBusy] = useState(true);
+
   const [difficulty, setDifficulty] = useState({
     mode: 'easy',
     numPokemon: 6,
@@ -15,15 +17,18 @@ const Game = () => {
   });
 
   useEffect(() => {
+    setBusy(true);
     pokemonGenerator(difficulty.numPokemon)
       .then((data) => setPokemonData({
         ...data,
       }));
+    setBusy(false);
   }, []);
 
   return (
     <>
       <Header
+        busy={busy}
         answer={pokemonData.answer}
         setDifficulty={setDifficulty}
       />
