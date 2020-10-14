@@ -13,20 +13,12 @@ const Game = () => {
     answer: 132,
     pokemon: [{
       species: {
-        name: 'ditto',
+        name: 'loading',
       },
       sprites: {
         front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
       },
-    },
-    {
-      species: {
-        name: 'ditto',
-      },
-      sprites: {
-        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
-      },
-    },
+    }
     ],
   });
 
