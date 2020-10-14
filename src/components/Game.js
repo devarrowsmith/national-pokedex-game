@@ -6,24 +6,16 @@ import pokemonGenerator from '../helpers/pokemonGenerator';
 const Game = () => {
   const [difficulty, setDifficulty] = useState({
     mode: 'easy',
-    blocks: 6,
+    numPokemon: 6,
   });
 
   const [pokemonData, setPokemonData] = useState({
-    answer: 132,
-    pokemon: [{
-      species: {
-        name: 'loading',
-      },
-      sprites: {
-        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
-      },
-    }
-    ],
+    answer: null,
+    pokemon: [],
   });
 
   useEffect(() => {
-    pokemonGenerator()
+    pokemonGenerator(difficulty.numPokemon)
       .then((data) => setPokemonData({
         ...data,
       }));
