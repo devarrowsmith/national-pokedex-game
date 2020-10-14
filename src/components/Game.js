@@ -18,18 +18,23 @@ const Game = () => {
       sprites: {
         front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
       },
-    }
+    },
+    {
+      species: {
+        name: 'ditto',
+      },
+      sprites: {
+        front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png',
+      },
+    },
     ],
   });
 
   useEffect(() => {
-    // async function initData() {
-    //   const data = await pokemonGenerator();
-    //   setPokemonData({
-    //     answer: data.answer,
-    //     pokemon: data.pokemon,
-    //   });
-    // } initData();
+    pokemonGenerator()
+      .then((data) => setPokemonData({
+        ...data,
+      }));
   }, []);
 
   return (
