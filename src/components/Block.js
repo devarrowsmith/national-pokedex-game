@@ -8,6 +8,10 @@ const StyledBlock = styled.div`
   width: 130px;
   margin: 10px;
   background-color: lightskyblue;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 `;
 
 const Block = ({ pokemonName, pokemonSprite }) => (
