@@ -1,8 +1,11 @@
 import React from 'react';
 import Button from './Button';
+import refreshPokemonData from '../helpers/refreshPokemonData';
 
-const ResetButton = () => (
-  <Button>
+const ResetButton = ({ setBusy, setPokemonData, difficulty}) => (
+  <Button
+    onClick={() => refreshPokemonData(setBusy, setPokemonData, difficulty)}
+  >
     RESET
   </Button>
 );

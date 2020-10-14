@@ -7,14 +7,14 @@ const StyledButtonContainer = styled.div`
   display: flex;
 `;
 
-const ResetButton = ({
+const DifficultyButtons = ({
   setDifficulty, setBusy, setPokemonData, difficulty,
 }) => (
   <StyledButtonContainer>
     <Button
-      onClick={() => {
+      onClick={async () => {
         console.log('Easy Click!');
-        setDifficulty({
+        await setDifficulty({
           mode: 'easy',
           numPokemon: 6,
         });
@@ -25,9 +25,9 @@ const ResetButton = ({
     </Button>
 
     <Button
-      onClick={() => {
+      onClick={async () => {
         console.log('Hard Click!');
-        setDifficulty({
+        await setDifficulty({
           mode: 'hard',
           numPokemon: 12,
         });
@@ -38,9 +38,9 @@ const ResetButton = ({
     </Button>
 
     <Button
-      onClick={() => {
+      onClick={async () => {
         console.log('Ultra Click!');
-        setDifficulty({
+        await setDifficulty({
           mode: 'ultra',
           numPokemon: 24,
         });
@@ -52,4 +52,4 @@ const ResetButton = ({
   </StyledButtonContainer>
 );
 
-export default ResetButton;
+export default DifficultyButtons;
