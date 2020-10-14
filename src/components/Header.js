@@ -4,14 +4,19 @@ import Title from './Title';
 import Message from './Message';
 import SettingButtons from './SettingButtons';
 
-const Header = ({ busy, answer, setDifficulty }) => (
+const Header = ({ busy, answer, setDifficulty, setBusy, setPokemonData, difficulty  }) => (
   <>
     <Title />
     <Message
       busy={busy}
       answer={answer}
     />
-    <SettingButtons />
+    <SettingButtons
+      setDifficulty={setDifficulty}
+      setBusy={setBusy}
+      setPokemonData={setPokemonData}
+      difficulty={difficulty}
+    />
 
   </>
 );

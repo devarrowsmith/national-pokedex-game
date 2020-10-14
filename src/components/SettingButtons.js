@@ -12,10 +12,15 @@ const SettingButtonsBar = styled.div`
   justify-content: space-between;
 `;
 
-const SettingButtons = () => (
+const SettingButtons = ({ setDifficulty, setBusy, setPokemonData, difficulty }) => (
   <SettingButtonsBar>
     <ResetButton />
-    <DifficultyButtons />
+    <DifficultyButtons
+      setDifficulty={setDifficulty}
+      setBusy={setBusy}
+      setPokemonData={setPokemonData}
+      difficulty={difficulty}
+    />
   </SettingButtonsBar>
 );
 

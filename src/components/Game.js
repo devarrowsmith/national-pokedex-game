@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import Grid from './Grid';
-import pokemonGenerator from '../helpers/pokemonGenerator';
+import refreshPokemonData from '../helpers/refreshPokemonData';
 
 const Game = () => {
   const [busy, setBusy] = useState(true);
@@ -17,12 +17,7 @@ const Game = () => {
   });
 
   useEffect(() => {
-    setBusy(true);
-    pokemonGenerator(difficulty.numPokemon)
-      .then((data) => setPokemonData({
-        ...data,
-      }));
-    setBusy(false);
+    refreshPokemonData(setBusy, setPokemonData, difficulty);
   }, []);
 
   return (
@@ -31,6 +26,9 @@ const Game = () => {
         busy={busy}
         answer={pokemonData.answer}
         setDifficulty={setDifficulty}
+        setBusy={setBusy}
+        setPokemonData={setPokemonData}
+        difficulty={difficulty}
       />
       <Grid
         pokemon={pokemonData.pokemon}
