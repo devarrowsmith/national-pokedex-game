@@ -18,7 +18,7 @@ const Game = () => {
 
   useEffect(() => {
     refreshPokemonData(setBusy, setPokemonData, difficulty);
-  }, []);
+  }, [difficulty]);
 
   return (
     <>

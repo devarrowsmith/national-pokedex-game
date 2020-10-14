@@ -18,7 +18,6 @@ const DifficultyButtons = ({
           mode: 'easy',
           numPokemon: 6,
         });
-        refreshPokemonData(setBusy, setPokemonData, difficulty);
       }}
     >
       Easy
@@ -31,7 +30,6 @@ const DifficultyButtons = ({
           mode: 'hard',
           numPokemon: 12,
         });
-        refreshPokemonData(setBusy, setPokemonData, difficulty);
       }}
     >
       Hard
@@ -44,7 +42,6 @@ const DifficultyButtons = ({
           mode: 'ultra',
           numPokemon: 24,
         });
-        refreshPokemonData(setBusy, setPokemonData, difficulty);
       }}
     >
       Ultra
