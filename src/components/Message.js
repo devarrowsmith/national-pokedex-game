@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Loading from './Loading';
 import Question from './Question';
-import Answer from './Answer';
 
 const MessageContainer = styled.div`
   height: 100px;
