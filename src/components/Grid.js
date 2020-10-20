@@ -17,8 +17,8 @@ const Grid = ({ pokemon }) => (
       : (pokemon.map((singlePokemon) => (
         <Block
           key={singlePokemon.species.name}
-          pokemonName={singlePokemon.species.name}
-          pokemonSprite={singlePokemon.sprites.front_default}
+          text={singlePokemon.species.name}
+          sprite={singlePokemon.sprites.front_default}
         />
       )))}
   </StyledGrid>

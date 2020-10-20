@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledName = styled.p`
+const StyledBlockText = styled.p`
   height: 30%;
   width: 100%;
   margin: 0;
@@ -11,10 +11,10 @@ const StyledName = styled.p`
   text-align: center;
 `;
 
-const PokemonSprite = ({ name }) => (
-  <StyledName>
-    {name}
-  </StyledName>
+const BlockText = ({ text }) => (
+  <StyledBlockText>
+    {text}
+  </StyledBlockText>
 );
 
-export default PokemonSprite;
+export default BlockText;

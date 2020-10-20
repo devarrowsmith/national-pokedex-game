@@ -5,11 +5,11 @@ const StyledSprite = styled.img`
   height: 70%;
 `;
 
-const PokemonSprite = ({ sprite, name }) => (
-  <StyledSprite 
+const BlockSprite = ({ sprite, text }) => (
+  <StyledSprite
     src={sprite}
-    alt={name}
+    alt={text}
   />
 );
 
-export default PokemonSprite;
+export default BlockSprite;

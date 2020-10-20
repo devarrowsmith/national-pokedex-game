@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import PokemonSprite from './PokemonSprite';
-import PokemonName from './PokemonName';
+import BlockSprite from './BlockSprite';
+import BlockText from './BlockText';
 
 const StyledBlock = styled.div`
   height: 130px;
@@ -14,14 +14,14 @@ const StyledBlock = styled.div`
   align-items: center;
 `;
 
-const Block = ({ pokemonName, pokemonSprite }) => (
+const Block = ({ sprite, text }) => (
   <StyledBlock>
-    <PokemonSprite
-      sprite={pokemonSprite}
-      name={pokemonName}
+    <BlockSprite
+      sprite={sprite}
+      text={text}
     />
-    <PokemonName
-      name={pokemonName}
+    <BlockText
+      text={text}
     />
   </StyledBlock>
 );
