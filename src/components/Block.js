@@ -14,8 +14,9 @@ const StyledBlock = styled.div`
   align-items: center;
 `;
 
-const Block = ({ sprite, text }) => (
-  <StyledBlock>
+const Block = ({ className, sprite, text }) => (
+  <StyledBlock
+    className={className}>
     <BlockSprite
       sprite={sprite}
       text={text}
