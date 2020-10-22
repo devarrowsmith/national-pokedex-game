@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
 
-const StyledBlock = styled.div`
+const StyledBlock = styled.button`
+  all: unset;
   height: 130px;
   width: 130px;
   margin: 10px;
