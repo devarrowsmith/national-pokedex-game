@@ -8,6 +8,7 @@ const pokemonGenerator = async (numPokemon) => {
   const pokemon = await compilePokemon(dex);
   const pokemonData = {
     answer,
+    selected: [],
     pokemon,
   };
   return pokemonData;

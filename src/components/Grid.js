@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Block from './Block';
+import ConditionalBlock from './ConditionalBlock';
 
 const StyledGrid = styled.div`
   width: 100%;
@@ -10,15 +10,16 @@ const StyledGrid = styled.div`
   justify-content: space-evenly;
 `;
 
-const Grid = ({ pokemon }) => (
+const Grid = ({ pokemonData }) => (
   <StyledGrid>
-    {!pokemon[0]
+    {!pokemonData.pokemon[0]
       ? (<h1>loading...</h1>)
-      : (pokemon.map((singlePokemon) => (
-        <Block
+      : (pokemonData.pokemon.map((singlePokemon) => (
+        <ConditionalBlock
           key={singlePokemon.species.name}
-          text={singlePokemon.species.name}
           sprite={singlePokemon.sprites.front_default}
+          text={singlePokemon.species.name}
+          selected={pokemonData.selected}
         />
       )))}
   </StyledGrid>

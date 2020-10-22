@@ -13,6 +13,7 @@ const Game = () => {
 
   const [pokemonData, setPokemonData] = useState({
     answer: null,
+    picked: [],
     pokemon: [],
   });
 
@@ -31,7 +32,7 @@ const Game = () => {
         difficulty={difficulty}
       />
       <Grid
-        pokemon={pokemonData.pokemon}
+        pokemonData={pokemonData}
       />
     </>
   );
