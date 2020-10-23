@@ -13,7 +13,7 @@ const Game = () => {
 
   const [pokemonData, setPokemonData] = useState({
     answer: null,
-    picked: [],
+    selected: [],
     pokemon: [],
   });
 
@@ -26,13 +26,14 @@ const Game = () => {
       <Header
         busy={busy}
         answer={pokemonData.answer}
+        difficulty={difficulty}
         setDifficulty={setDifficulty}
         setBusy={setBusy}
         setPokemonData={setPokemonData}
-        difficulty={difficulty}
       />
       <Grid
         pokemonData={pokemonData}
+        setPokemonData={setPokemonData}
       />
     </>
   );

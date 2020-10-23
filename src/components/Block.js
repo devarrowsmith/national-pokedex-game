@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
+import checkAnswer from '../helpers/checkAnswer'
 
 const StyledBlock = styled.button`
   all: unset;
@@ -15,9 +16,11 @@ const StyledBlock = styled.button`
   align-items: center;
 `;
 
-const Block = ({ className, sprite, text }) => (
+const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData }) => (
   <StyledBlock
-    className={className}>
+    className={className}
+    onClick={() => checkAnswer(dexNumber, pokemonData, setPokemonData)}
+  >
     <BlockSprite
       sprite={sprite}
       text={text}

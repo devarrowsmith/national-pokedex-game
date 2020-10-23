@@ -10,7 +10,7 @@ const StyledGrid = styled.div`
   justify-content: space-evenly;
 `;
 
-const Grid = ({ pokemonData }) => (
+const Grid = ({ pokemonData, setPokemonData }) => (
   <StyledGrid>
     {!pokemonData.pokemon[0]
       ? (<h1>loading...</h1>)
@@ -19,7 +19,9 @@ const Grid = ({ pokemonData }) => (
           key={singlePokemon.species.name}
           sprite={singlePokemon.sprites.front_default}
           text={singlePokemon.species.name}
-          selected={pokemonData.selected}
+          dexNumber={singlePokemon.id}
+          pokemonData={pokemonData}
+          setPokemonData={setPokemonData}
         />
       )))}
   </StyledGrid>
