@@ -15,6 +15,7 @@ const Game = () => {
     answer: null,
     selected: [],
     pokemon: [],
+    win: false,
   });
 
   useEffect(() => {

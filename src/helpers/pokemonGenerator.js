@@ -10,6 +10,7 @@ const pokemonGenerator = async (numPokemon) => {
     answer,
     selected: [],
     pokemon,
+    win: false,
   };
   return pokemonData;
 };

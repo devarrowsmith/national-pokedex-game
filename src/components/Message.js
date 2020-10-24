@@ -12,13 +12,16 @@ const MessageContainer = styled.div`
 `;
 
 const Message = ({ busy, answer }) => {
-  const loadingCondition = () => (busy ? (
-    <Loading />
-  ) : (
-    <Question
-      answer={answer}
-    />
-  ));
+  const loadingCondition = () => {
+    if (busy) {
+      return (<Loading />);
+    }
+    return (
+      <Question
+        answer={answer}
+      />
+    );
+  };
 
   return (
     <MessageContainer>
