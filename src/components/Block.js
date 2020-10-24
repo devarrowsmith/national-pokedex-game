@@ -9,6 +9,7 @@ const StyledBlock = styled.button`
   height: 130px;
   width: 130px;
   margin: 10px;
+  cursor: pointer;
   background-color: lightskyblue;
   border-radius: 20px;
   display: flex;
@@ -16,10 +17,11 @@ const StyledBlock = styled.button`
   align-items: center;
 `;
 
-const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData }) => (
+const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled }) => (
   <StyledBlock
     className={className}
     onClick={() => checkAnswer(dexNumber, pokemonData, setPokemonData)}
+    disabled={disabled}
   >
     <BlockSprite
       sprite={sprite}

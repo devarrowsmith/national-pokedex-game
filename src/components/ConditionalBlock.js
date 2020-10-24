@@ -2,10 +2,16 @@ import React from 'react';
 import Block from './Block';
 import DittoBlock from './DittoBlock';
 
-const ConditionalBlock = ({ sprite, text, dexNumber, pokemonData, setPokemonData }) => (
+const ConditionalBlock = ({
+  sprite, text, dexNumber, pokemonData, setPokemonData,
+}) => (
   <>
     {pokemonData.selected.includes(dexNumber)
-      ? (<DittoBlock />)
+      ? (
+        <DittoBlock
+          disabled
+        />
+      )
       : (
         <Block
           key={text}
@@ -14,6 +20,7 @@ const ConditionalBlock = ({ sprite, text, dexNumber, pokemonData, setPokemonData
           dexNumber={dexNumber}
           pokemonData={pokemonData}
           setPokemonData={setPokemonData}
+          disabled={false}
         />
       )}
   </>
