@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import Block from './Block';
 
 const StyledVictiniBlock = styled(Block)`
-background-color: #0c0b12;
+background-color: #F5BB13;
 
 p {
-  color: #ec8af5;
-  background-color: #191926;
+  color: #FFFFFF;
+  background-color: #7b1100;
 }
 `;
 
