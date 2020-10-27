@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import Header from './Header';
 import Grid from './Grid';
 import refreshPokemonData from '../helpers/refreshPokemonData';
@@ -22,8 +23,12 @@ const Game = () => {
     refreshPokemonData(setBusy, setPokemonData, difficulty);
   }, [difficulty]);
 
+  const GameContainer = styled.div`
+    min-width: 310px;
+  `;
+
   return (
-    <>
+    <GameContainer>
       <Header
         busy={busy}
         answer={pokemonData.answer}
@@ -37,7 +42,7 @@ const Game = () => {
         pokemonData={pokemonData}
         setPokemonData={setPokemonData}
       />
-    </>
+    </GameContainer>
   );
 };
 export default Game;

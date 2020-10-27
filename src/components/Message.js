@@ -7,6 +7,7 @@ import WinMessage from './WinMessage';
 const MessageContainer = styled.div`
   height: 100px;
   width: 100%;
+  max-width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;

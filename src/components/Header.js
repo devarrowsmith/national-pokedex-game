@@ -11,6 +11,11 @@ const StyledHeader = styled.div`
   left: 0;
   background-color: black;
   height: 50vh;
+  max-height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 `;
 
 const Header = ({

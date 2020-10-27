@@ -16,7 +16,11 @@ const StyledBlock = styled.button`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  animation: ${fadeIn} 2s;
+  /* animation: ${fadeIn} 2s; */
+
+  @media (min-height: 600px) {
+    margin: 20px 10px;
+  }
 `;
 
 const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled }) => (
