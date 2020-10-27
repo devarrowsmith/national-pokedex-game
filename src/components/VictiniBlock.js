@@ -14,7 +14,7 @@ p {
 const VictiniBlock = ({ disabled }) => (
   <StyledVictiniBlock
     text="You Win!"
-    sprite="./assets/victini.png"
+    sprite="http://gummicode.github.io/national-pokedex-game/assets/victini.png"
     disabled={disabled}
   />
 );

@@ -14,7 +14,7 @@ p {
 const DittoBlock = ({ disabled }) => (
   <StyledDittoBlock
     text="try again!"
-    sprite="./assets/ditto.png"
+    sprite="http://gummicode.github.io/national-pokedex-game/assets/ditto.png"
     disabled={disabled}
   />
 );
