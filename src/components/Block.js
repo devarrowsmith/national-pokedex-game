@@ -1,8 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
-import checkAnswer from '../helpers/checkAnswer'
+import fadeIn from '../styles/fadeIn';
+import checkAnswer from '../helpers/checkAnswer';
 
 const StyledBlock = styled.button`
   all: unset;
@@ -15,6 +16,7 @@ const StyledBlock = styled.button`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  animation: ${fadeIn} 2s;
 `;
 
 const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled }) => (

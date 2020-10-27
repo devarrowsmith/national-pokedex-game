@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Loading from './Loading';
 import Question from './Question';
+import WinMessage from './WinMessage';
 
 const MessageContainer = styled.div`
   height: 100px;
@@ -11,10 +12,13 @@ const MessageContainer = styled.div`
   align-items: center;
 `;
 
-const Message = ({ busy, answer }) => {
+const Message = ({ busy, answer, win }) => {
   const loadingCondition = () => {
     if (busy) {
       return (<Loading />);
+    } if (win) {
+      return (
+        <WinMessage />);
     }
     return (
       <Question

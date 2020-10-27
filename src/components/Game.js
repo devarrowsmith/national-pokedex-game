@@ -28,6 +28,7 @@ const Game = () => {
         busy={busy}
         answer={pokemonData.answer}
         difficulty={difficulty}
+        win={pokemonData.win}
         setDifficulty={setDifficulty}
         setBusy={setBusy}
         setPokemonData={setPokemonData}
