@@ -10,8 +10,7 @@ const StyledHeader = styled.div`
   top: 0;
   left: 0;
   background-color: black;
-  height: 50vh;
-  max-height: 300px;
+  height: 280px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;

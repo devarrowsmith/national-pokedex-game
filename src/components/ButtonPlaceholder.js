@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButtonPlaceholder = styled.button`
-  width: 20vw;
-  max-width: 70px;
+  width: 70px;
+  height: 40px;
   margin: 0 5px;
   padding: 0 10px;
   border-radius: 10px;
@@ -11,10 +11,6 @@ const StyledButtonPlaceholder = styled.button`
   font-family: 'Bungee', sans-serif;
   border: none;
   background-color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 `;
 
 const ButtonPlaceholder = ({ mode }) => (
