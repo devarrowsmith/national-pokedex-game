@@ -9,7 +9,7 @@ const GridContainer = styled.div`
 `;
 
 const StyledGrid = styled.div`
-  margin: 50vh 0 0 0;
+  margin: 50% 0 0 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
