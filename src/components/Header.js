@@ -1,12 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 import Title from './Title';
 import Message from './Message';
 import SettingButtons from './SettingButtons';
 
+const StyledHeader = styled.div`
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 50vh;
+`;
+
 const Header = ({
   busy, answer, difficulty, win, setDifficulty, setBusy, setPokemonData,
 }) => (
-  <>
+  <StyledHeader>
     <Title />
     <Message
       busy={busy}
@@ -20,7 +30,7 @@ const Header = ({
       difficulty={difficulty}
     />
 
-  </>
+  </StyledHeader>
 );
 
 export default Header;

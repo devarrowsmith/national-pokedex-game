@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
-import fadeIn from '../styles/fadeIn';
+import fadeIn from '../animations/fadeIn';
 import checkAnswer from '../helpers/checkAnswer';
 
 const StyledBlock = styled.button`

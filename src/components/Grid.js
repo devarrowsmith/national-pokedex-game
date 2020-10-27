@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import ConditionalBlock from './ConditionalBlock';
 
 const StyledGrid = styled.div`
+  margin: 50vh 0 0 0;
   width: 100%;
+  min-height: 50vh;
   background-color: darkslategrey;
   display: flex;
   flex-flow: row wrap;
