@@ -4,6 +4,10 @@ import Header from './Header';
 import Grid from './Grid';
 import refreshPokemonData from '../helpers/refreshPokemonData';
 
+const GameContainer = styled.div`
+min-width: 310px;
+`;
+
 const Game = () => {
   const [busy, setBusy] = useState(true);
 
@@ -22,10 +26,6 @@ const Game = () => {
   useEffect(() => {
     refreshPokemonData(setBusy, setPokemonData, difficulty);
   }, [difficulty]);
-
-  const GameContainer = styled.div`
-    min-width: 310px;
-  `;
 
   return (
     <GameContainer>
