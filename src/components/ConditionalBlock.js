@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Block from './Block';
 import DittoBlock from './DittoBlock';
 import VictiniBlock from './VictiniBlock';
@@ -32,6 +33,25 @@ const ConditionalBlock = ({
       disabled={false}
     />
   );
+};
+
+ConditionalBlock.defaultProps = {
+  sprite: '',
+  dexNumber: 0,
+  pokemonData: {},
+};
+
+ConditionalBlock.propTypes = {
+  sprite: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  dexNumber: PropTypes.number,
+  pokemonData: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  setPokemonData: PropTypes.func.isRequired,
 };
 
 export default ConditionalBlock;

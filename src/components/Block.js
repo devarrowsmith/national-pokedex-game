@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
 import fadeIn from '../animations/fadeIn';
@@ -23,7 +24,9 @@ const StyledBlock = styled.button`
   }
 `;
 
-const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled }) => (
+const Block = ({
+  className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled,
+}) => (
   <StyledBlock
     className={className}
     onClick={() => checkAnswer(dexNumber, pokemonData, setPokemonData)}
@@ -38,5 +41,26 @@ const Block = ({ className, sprite, text, dexNumber, pokemonData, setPokemonData
     />
   </StyledBlock>
 );
+
+Block.defaultProps = {
+  className: '',
+  dexNumber: 0,
+  pokemonData: {},
+};
+
+Block.propTypes = {
+  className: PropTypes.string,
+  sprite: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  dexNumber: PropTypes.number,
+  pokemonData: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  setPokemonData: PropTypes.func.isRequired,
+  disabled: PropTypes.bool.isRequired,
+};
 
 export default Block;

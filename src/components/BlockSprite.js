@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledSprite = styled.img`
@@ -11,5 +12,10 @@ const BlockSprite = ({ sprite, text }) => (
     alt={text}
   />
 );
+
+BlockSprite.propTypes = {
+  sprite: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default BlockSprite;

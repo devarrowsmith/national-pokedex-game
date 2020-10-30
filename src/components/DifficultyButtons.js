@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
 import ButtonPlaceholder from './ButtonPlaceholder';
@@ -9,7 +10,7 @@ const StyledButtonContainer = styled.div`
 `;
 
 const DifficultyButtons = ({
-  setDifficulty, setBusy, setPokemonData, difficulty,
+  setDifficulty, difficulty,
 }) => (
   <StyledButtonContainer>
     {
@@ -36,5 +37,13 @@ const DifficultyButtons = ({
 }
   </StyledButtonContainer>
 );
+
+DifficultyButtons.propTypes = {
+  setDifficulty: PropTypes.func.isRequired,
+  difficulty: PropTypes.shape({
+    mode: PropTypes.string.isRequired,
+    numPokemon: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default DifficultyButtons;

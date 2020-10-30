@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledButtonPlaceholder = styled.button`
@@ -18,5 +19,9 @@ const ButtonPlaceholder = ({ mode }) => (
     {mode}
   </StyledButtonPlaceholder>
 );
+
+ButtonPlaceholder.propTypes = {
+  mode: PropTypes.string.isRequired,
+};
 
 export default ButtonPlaceholder;
