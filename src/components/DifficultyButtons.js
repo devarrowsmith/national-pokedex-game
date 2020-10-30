@@ -18,12 +18,14 @@ const DifficultyButtons = ({
       setting.mode === difficulty.mode
         ? (
           <ButtonPlaceholder
+            key={setting.mode}
             mode={setting.mode}
           >
             {setting.mode}
           </ButtonPlaceholder>
         ) : (
           <Button
+            key={setting.mode}
             onClick={() => {
               setDifficulty({
                 mode: setting.mode,
