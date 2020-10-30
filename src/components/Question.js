@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledQuestion = styled.h3`
@@ -24,4 +25,13 @@ const Question = ({ answer }) => (
     ?
   </StyledQuestion>
 );
+
+Question.defaultProps = {
+  answer: 0,
+};
+
+Question.propTypes = {
+  answer: PropTypes.number,
+};
+
 export default Question;

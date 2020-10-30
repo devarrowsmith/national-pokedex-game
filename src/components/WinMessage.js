@@ -13,9 +13,10 @@ const StyledMessage = styled.h3`
   }
 `;
 
-const Question = ({ answer }) => (
+const WinMessage = () => (
   <StyledMessage>
     You did it!
   </StyledMessage>
 );
-export default Question;
+
+export default WinMessage;

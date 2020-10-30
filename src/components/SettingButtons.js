@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ResetButton from './ResetButton';
 import DifficultyButtons from './DifficultyButtons';
@@ -30,5 +31,15 @@ const SettingButtons = ({
     />
   </SettingButtonsBar>
 );
+
+SettingButtons.propTypes = {
+  setDifficulty: PropTypes.func.isRequired,
+  setBusy: PropTypes.func.isRequired,
+  setPokemonData: PropTypes.func.isRequired,
+  difficulty: PropTypes.shape({
+    mode: PropTypes.string.isRequired,
+    numPokemon: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default SettingButtons;

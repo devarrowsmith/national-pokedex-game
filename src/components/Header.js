@@ -38,13 +38,17 @@ const Header = ({
   </StyledHeader>
 );
 
+Header.defaultProps = {
+  answer: 0,
+};
+
 Header.propTypes = {
   busy: PropTypes.bool.isRequired,
-  answer: PropTypes.number.isRequired,
   difficulty: PropTypes.shape({
     mode: PropTypes.string.isRequired,
     numPokemon: PropTypes.number.isRequired,
   }).isRequired,
+  answer: PropTypes.number,
   win: PropTypes.bool.isRequired,
   setDifficulty: PropTypes.func.isRequired,
   setBusy: PropTypes.func.isRequired,

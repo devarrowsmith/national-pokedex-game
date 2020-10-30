@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Loading from './Loading';
 import Question from './Question';
@@ -33,6 +34,16 @@ const Message = ({ busy, answer, win }) => {
       {loadingCondition()}
     </MessageContainer>
   );
+};
+
+Message.defaultProps = {
+  answer: 0,
+};
+
+Message.propTypes = {
+  busy: PropTypes.bool.isRequired,
+  answer: PropTypes.number,
+  win: PropTypes.bool.isRequired,
 };
 
 export default Message;

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
-import fadeIn from '../animations/fadeIn';
 import checkAnswer from '../helpers/checkAnswer';
 
 const StyledBlock = styled.button`
@@ -17,7 +16,6 @@ const StyledBlock = styled.button`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  /* animation: ${fadeIn} 2s; */
 
   @media (min-height: 600px) {
     margin: 20px 10px;
