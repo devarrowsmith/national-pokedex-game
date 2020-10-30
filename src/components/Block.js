@@ -45,7 +45,6 @@ const Block = ({
 Block.defaultProps = {
   className: '',
   dexNumber: 0,
-  pokemonData: {},
 };
 
 Block.propTypes = {
@@ -58,7 +57,7 @@ Block.propTypes = {
     PropTypes.number,
     PropTypes.array,
     PropTypes.object,
-  ]),
+  ]).isRequired,
   setPokemonData: PropTypes.func.isRequired,
   disabled: PropTypes.bool.isRequired,
 };

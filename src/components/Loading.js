@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import fadeIn from '../animations/fadeIn';
 
 const StyledLoading = styled.h3`
   margin: 0;

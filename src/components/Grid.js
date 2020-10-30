@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ConditionalBlock from './ConditionalBlock';
 
@@ -43,5 +44,15 @@ const Grid = ({ pokemonData, setPokemonData }) => (
     </StyledGrid>
   </GridContainer>
 );
+
+Grid.propTypes = {
+  pokemonData: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
+  setPokemonData: PropTypes.func.isRequired,
+};
 
 export default Grid;

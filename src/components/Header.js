@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Title from './Title';
 import Message from './Message';
@@ -36,5 +37,18 @@ const Header = ({
 
   </StyledHeader>
 );
+
+Header.propTypes = {
+  busy: PropTypes.bool.isRequired,
+  answer: PropTypes.number.isRequired,
+  difficulty: PropTypes.shape({
+    mode: PropTypes.string.isRequired,
+    numPokemon: PropTypes.number.isRequired,
+  }).isRequired,
+  win: PropTypes.bool.isRequired,
+  setDifficulty: PropTypes.func.isRequired,
+  setBusy: PropTypes.func.isRequired,
+  setPokemonData: PropTypes.func.isRequired,
+};
 
 export default Header;

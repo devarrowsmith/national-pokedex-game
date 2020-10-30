@@ -38,7 +38,6 @@ const ConditionalBlock = ({
 ConditionalBlock.defaultProps = {
   sprite: '',
   dexNumber: 0,
-  pokemonData: {},
 };
 
 ConditionalBlock.propTypes = {
@@ -50,7 +49,7 @@ ConditionalBlock.propTypes = {
     PropTypes.number,
     PropTypes.array,
     PropTypes.object,
-  ]),
+  ]).isRequired,
   setPokemonData: PropTypes.func.isRequired,
 };
 
