@@ -4,7 +4,7 @@ A popular introduction to DOM manipulation is the JavaScript Color Game. FreeCod
 
 I decided to create a variant of the color game with two core differences from the original:
 - It would be a React.js app with component based architecture 
-- It would use data fetched from the [PokéAPI (Pokémon https://pokeapi.co/) instead of colors
+- It would use data fetched from the [PokéAPI](https://pokeapi.co/) (a Pokémon API) instead of colors
 
 This game is the outcome. You can play it [here.](https://gummicode.github.io/national-pokedex-game/)
 
