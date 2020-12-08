@@ -6,6 +6,7 @@ const Button = styled.button`
   margin: 0 5px;
   padding: 0 10px;
   border-radius: 10px;
+  cursor: pointer;
   color: white;
   font-family: 'Bungee', sans-serif;
   border: none;
