@@ -14,7 +14,8 @@ const ConditionalBlock = ({
       />
     );
   } if (
-    (pokemonData.selected.includes(dexNumber) || pokemonData.numSelected > 2) && pokemonData.answer !== dexNumber 
+    (pokemonData.selected.includes(dexNumber) || pokemonData.numSelected > 2)
+    && pokemonData.answer !== dexNumber
   ) {
     return (
       <DittoBlock
@@ -22,6 +23,22 @@ const ConditionalBlock = ({
       />
     );
   }
+  if (
+    pokemonData.numSelected > 2 && pokemonData.answer === dexNumber) {
+    return (
+      <Block
+        key={text}
+        sprite={sprite}
+        text={text}
+        dexNumber={dexNumber}
+        pokemonData={pokemonData}
+        setPokemonData={setPokemonData}
+        disabled={true}
+      />
+    );
+  }
+
+
   return (
     <Block
       key={text}
