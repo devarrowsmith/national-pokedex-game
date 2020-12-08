@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Title from './Title';
 import Message from './Message';
 import SettingButtons from './SettingButtons';
+import LivesBar from './LivesBar';
 
 const StyledHeader = styled.div`
   position: fixed;
@@ -34,7 +35,7 @@ const Header = ({
       setPokemonData={setPokemonData}
       difficulty={difficulty}
     />
-
+    <LivesBar />
   </StyledHeader>
 );
 
