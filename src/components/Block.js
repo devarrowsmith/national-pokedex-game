@@ -11,7 +11,7 @@ const StyledBlock = styled.button`
   width: 130px;
   margin: 10px;
   cursor: pointer;
-  background-color: lightskyblue;
+  background-color: ${(prop) => (prop.className === 'reveal-answer' ? '#D6D1CD' : 'lightskyblue')};
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
@@ -35,6 +35,7 @@ const Block = ({
       text={text}
     />
     <BlockText
+      className={className}
       text={text}
     />
   </StyledBlock>

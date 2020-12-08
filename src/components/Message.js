@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Loading from './Loading';
 import Question from './Question';
 import WinMessage from './WinMessage';
+import LooseMessage from './LooseMessage';
 
 const MessageContainer = styled.div`
   height: 100px;
@@ -14,7 +15,7 @@ const MessageContainer = styled.div`
   align-items: center;
 `;
 
-const Message = ({ busy, answer, win }) => {
+const Message = ({ busy, answer, win, numSelected }) => {
   const loadingCondition = () => {
     if (busy) {
       return (
@@ -26,6 +27,13 @@ const Message = ({ busy, answer, win }) => {
       return (
         <MessageContainer>
           <WinMessage />
+        </MessageContainer>
+      );
+    }
+    if (numSelected > 2) {
+      return (
+        <MessageContainer>
+          <LooseMessage />
         </MessageContainer>
       );
     }

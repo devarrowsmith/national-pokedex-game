@@ -28,16 +28,16 @@ const ConditionalBlock = ({
     return (
       <Block
         key={text}
+        className="reveal-answer"
         sprite={sprite}
         text={text}
         dexNumber={dexNumber}
         pokemonData={pokemonData}
         setPokemonData={setPokemonData}
-        disabled={true}
+        disabled
       />
     );
   }
-
 
   return (
     <Block

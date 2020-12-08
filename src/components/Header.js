@@ -32,6 +32,7 @@ const Header = ({
       busy={busy}
       answer={answer}
       win={win}
+      numSelected={numSelected}
     />
     <SettingButtons
       setDifficulty={setDifficulty}
