@@ -23,9 +23,8 @@ const StyledHeader = styled.div`
   }
 `;
 
-
 const Header = ({
-  busy, answer, difficulty, win, setDifficulty, setBusy, setPokemonData,
+  busy, answer, difficulty, numSelected, win, setDifficulty, setBusy, setPokemonData,
 }) => (
   <StyledHeader>
     <Title />
@@ -40,7 +39,9 @@ const Header = ({
       setPokemonData={setPokemonData}
       difficulty={difficulty}
     />
-    <LivesBar />
+    <LivesBar
+      numSelected={numSelected}
+    />
   </StyledHeader>
 );
 

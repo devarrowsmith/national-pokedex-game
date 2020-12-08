@@ -19,6 +19,7 @@ const Game = () => {
   const [pokemonData, setPokemonData] = useState({
     answer: null,
     selected: [],
+    numSelected: 0,
     pokemon: [],
     win: false,
   });
@@ -33,6 +34,7 @@ const Game = () => {
         busy={busy}
         answer={pokemonData.answer}
         difficulty={difficulty}
+        numSelected={pokemonData.numSelected}
         win={pokemonData.win}
         setDifficulty={setDifficulty}
         setBusy={setBusy}

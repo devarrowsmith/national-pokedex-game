@@ -30,15 +30,22 @@ const StyledLivesBar = styled.div`
         background-color: yellow;
         margin: 0 5px 15px 5px;
     }
+
+    .grey-pip {
+          background-color: #202020;
+        }
 `;
 
-const LivesBar = () => (
+const LivesBar = ({ numSelected }) => {
+  console.log(numSelected);
+  return (
     <StyledLivesBar>
-        <p>LIVES:</p>
-        <div />
-        <div />
-        <div />
+      <p>LIVES:</p>
+      <div className={numSelected > 0 ? 'grey-pip' : null} />
+      <div className={numSelected > 1 ? 'grey-pip' : null} />
+      <div className={numSelected > 2 ? 'grey-pip' : null} />
     </StyledLivesBar>
-);
+  );
+};
 
 export default LivesBar;
