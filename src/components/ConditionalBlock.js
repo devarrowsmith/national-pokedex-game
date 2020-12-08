@@ -14,7 +14,7 @@ const ConditionalBlock = ({
       />
     );
   } if (
-    pokemonData.selected.includes(dexNumber)
+    (pokemonData.selected.includes(dexNumber) || pokemonData.numSelected > 2) && pokemonData.answer !== dexNumber 
   ) {
     return (
       <DittoBlock
