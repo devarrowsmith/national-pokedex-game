@@ -5,12 +5,16 @@ const StyledLivesBar = styled.div`
     width: 100%;
     max-width: 240px;
     height: 40px;
-    padding: 10px 0;
+    padding: 5px 0;
     border-radius: 15px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
+
+    @media (min-height: 600px) {
+    padding: 10px 0;
+  }
 
     p {
         color: white;

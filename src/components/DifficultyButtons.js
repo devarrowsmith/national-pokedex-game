@@ -8,6 +8,10 @@ import difficulties from '../helpers/difficulties';
 const StyledButtonContainer = styled.div`
   height: 40px;
   display: flex;
+
+  @media (min-height: 600px) {
+    height: 30px;
+  }
 `;
 
 const DifficultyButtons = ({

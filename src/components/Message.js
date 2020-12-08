@@ -17,15 +17,24 @@ const MessageContainer = styled.div`
 const Message = ({ busy, answer, win }) => {
   const loadingCondition = () => {
     if (busy) {
-      return (<Loading />);
+      return (
+        <MessageContainer>
+          <Loading />
+        </MessageContainer>
+      );
     } if (win) {
       return (
-        <WinMessage />);
+        <MessageContainer>
+          <WinMessage />
+        </MessageContainer>
+      );
     }
     return (
-      <Question
-        answer={answer}
-      />
+      <MessageContainer>
+        <Question
+          answer={answer}
+        />
+      </MessageContainer>
     );
   };
 

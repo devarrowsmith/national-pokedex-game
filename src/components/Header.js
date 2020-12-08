@@ -12,12 +12,17 @@ const StyledHeader = styled.div`
   top: 0;
   left: 0;
   background-color: black;
-  height: 340px;
+  height: 330px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  @media (min-height: 600px) {
+    height: 340px
+  }
 `;
+
 
 const Header = ({
   busy, answer, difficulty, win, setDifficulty, setBusy, setPokemonData,
