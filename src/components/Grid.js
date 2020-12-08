@@ -10,7 +10,7 @@ const GridContainer = styled.div`
 `;
 
 const StyledGrid = styled.div`
-  margin: 300px 0 0 0;
+  margin: 340px 0 0 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -18,7 +18,7 @@ const StyledGrid = styled.div`
   align-items: flex-start;
 
   @media (min-height: 600px) {
-    margin: 300px 0 0 0;
+    margin: 340px 0 0 0;
   }
 
   @media (min-width: 500px) {

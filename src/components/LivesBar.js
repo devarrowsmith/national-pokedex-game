@@ -3,16 +3,19 @@ import styled from 'styled-components';
 
 const StyledLivesBar = styled.div`
     width: 100%;
-    max-width: 360px;
+    max-width: 240px;
     height: 40px;
+    padding: 10px 0;
+    border-radius: 15px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items center;
+    align-items: center;
 
     p {
         color: white;
         font-family: 'Bungee', sans-serif;
+        font-size: 1.2em;
         padding: 0 5px 15px 5px;
     }
 

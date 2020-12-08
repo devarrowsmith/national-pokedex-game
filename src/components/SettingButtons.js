@@ -7,7 +7,7 @@ import DifficultyButtons from './DifficultyButtons';
 const SettingButtonsBar = styled.div`
   width: 100%;
   max-width: 360px;
-  height: 6vh;
+  height: 40px;
   padding: 15px 0;
   display: flex; 
   flex-flow: row nowrap;

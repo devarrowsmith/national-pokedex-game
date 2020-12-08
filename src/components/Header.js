@@ -12,7 +12,7 @@ const StyledHeader = styled.div`
   top: 0;
   left: 0;
   background-color: black;
-  height: 280px;
+  height: 340px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;

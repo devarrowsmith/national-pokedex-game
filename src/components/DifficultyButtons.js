@@ -6,6 +6,7 @@ import ButtonPlaceholder from './ButtonPlaceholder';
 import difficulties from '../helpers/difficulties';
 
 const StyledButtonContainer = styled.div`
+  height: 40px;
   display: flex;
 `;
 
