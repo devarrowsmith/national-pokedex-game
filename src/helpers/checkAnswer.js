@@ -7,7 +7,6 @@ const checkAnswer = (dexNumber, pokemonData, setPokemonData) => (dexNumber === p
     ...previousState,
     selected: [...previousState.selected, dexNumber],
     numSelected: (() => {
-      console.log(previousState);
       return previousState.numSelected + 1;
     })(),
   }))));

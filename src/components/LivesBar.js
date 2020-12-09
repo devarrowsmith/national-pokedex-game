@@ -37,7 +37,6 @@ const StyledLivesBar = styled.div`
 `;
 
 const LivesBar = ({ numSelected }) => {
-  console.log(numSelected);
   return (
     <StyledLivesBar>
       <p>LIVES:</p>

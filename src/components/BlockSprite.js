@@ -22,7 +22,6 @@ const StyledSprite = styled.img`
 `;
 
 const BlockSprite = ({ sprite, text, spriteClass }) => {
-  console.log(spriteClass);
   return (
     <StyledSprite
       src={sprite}
