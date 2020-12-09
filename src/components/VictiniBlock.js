@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Block from './Block';
+import refreshPokemonData from '../helpers/refreshPokemonData';
 
 const StyledVictiniBlock = styled(Block)`
 background-color: #F5BB13;
@@ -16,6 +17,7 @@ const VictiniBlock = ({ disabled }) => (
   <StyledVictiniBlock
     text="You Win!"
     sprite="http://gummicode.github.io/national-pokedex-game/assets/victini.png"
+    spriteClass='victini'
     disabled={disabled}
   />
 );

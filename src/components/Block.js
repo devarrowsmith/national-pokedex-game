@@ -23,8 +23,9 @@ const StyledBlock = styled.button`
 `;
 
 const Block = ({
-  className, sprite, text, dexNumber, pokemonData, setPokemonData, disabled,
+  className, spriteClass, sprite, text, dexNumber, pokemonData, setPokemonData, win, disabled,
 }) => (
+
   <StyledBlock
     className={className}
     onClick={() => checkAnswer(dexNumber, pokemonData, setPokemonData)}
@@ -32,6 +33,7 @@ const Block = ({
   >
     <BlockSprite
       sprite={sprite}
+      spriteClass={spriteClass}
       text={text}
     />
     <BlockText

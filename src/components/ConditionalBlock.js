@@ -5,11 +5,12 @@ import DittoBlock from './DittoBlock';
 import VictiniBlock from './VictiniBlock';
 
 const ConditionalBlock = ({
-  sprite, text, dexNumber, pokemonData, setPokemonData,
+  sprite, text, dexNumber, pokemonData, setPokemonData, win,
 }) => {
   if (pokemonData.win && pokemonData.answer !== dexNumber) {
     return (
       <VictiniBlock
+      win={win}
         disabled
       />
     );
