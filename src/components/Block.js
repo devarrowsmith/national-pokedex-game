@@ -46,10 +46,12 @@ const Block = ({
 Block.defaultProps = {
   className: '',
   dexNumber: 0,
+  spriteClass: '',
 };
 
 Block.propTypes = {
   className: PropTypes.string,
+  spriteClass: PropTypes.string,
   sprite: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   dexNumber: PropTypes.number,

@@ -31,9 +31,14 @@ const BlockSprite = ({ sprite, text, spriteClass }) => {
   );
 };
 
+BlockSprite.defaultProps = {
+  spriteClass: '',
+};
+
 BlockSprite.propTypes = {
   sprite: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  spriteClass: PropTypes.string,
 };
 
 export default BlockSprite;
