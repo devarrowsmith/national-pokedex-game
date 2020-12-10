@@ -1,4 +1,4 @@
-# The National Pokédex Game
+# The National Pokédex Game 🌾
 
 ## Background
 
