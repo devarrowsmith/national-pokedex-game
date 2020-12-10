@@ -42,6 +42,7 @@ To install the repo locally:
 ## Framework
 
 Built with [React](https://github.com/facebook/react).
+Styled with [styled-components](https://styled-components.com/). 
 
 ---
 
@@ -51,6 +52,10 @@ This application uses Open Source components. You can find the source code of th
 
 - Project: [React](https://github.com/facebook/react)  
 Copyright (c) Facebook, Inc. and its affiliates.  
+License: [MIT](https://github.com/facebook/react/blob/master/LICENSE)
+
+- Project: [styled-components](https://github.com/styled-components/styled-components)  
+Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber  
 License: [MIT](https://github.com/facebook/react/blob/master/LICENSE)
 
 - Project: [PokéAPI](https://github.com/PokeAPI/pokeapi)   
