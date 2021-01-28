@@ -8,7 +8,7 @@ I decided to create a variant of the color game with two core differences from t
 - It would be a [React.js app](https://github.com/facebook/react) with component based architecture 
 - It would use data fetched from the [PokéAPI](https://pokeapi.co/) (a Pokémon API) instead of colors
 
-This game is the outcome. You can play it [here](https://gummicode.github.io/national-pokedex-game/).
+This game is the outcome. You can play it [here](https://devarrowsmith.github.io/national-pokedex-game/).
 
 ---
 
@@ -30,7 +30,7 @@ Rather than controlling the UI via direct DOM manipulation this version of the g
 
 ## Installation
 
-The game is hosted on [GitHub Pages](https://gummicode.github.io/national-pokedex-game/) and can be run from there.
+The game is hosted on [GitHub Pages](https://devarrowsmith.github.io/national-pokedex-game/) and can be run from there.
 
 To install the repo locally:
 1. [Clone this repo](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
