@@ -2,7 +2,7 @@
   "name": "national-pokedex-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gummicode.github.io/national-pokedex-game",
+  "homepage": "http://devarrowsmith.github.io/national-pokedex-game",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
