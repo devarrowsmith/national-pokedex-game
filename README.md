@@ -24,7 +24,8 @@ Rather than controlling the UI via direct DOM manipulation this version of the g
 
 ## Screenshots
 
-![Screenshot of the mobile version of the game.](/readme_images/mobile_screenshot_1.jpg)
+<img src="readme_images/mobile_screenshot_1.jpg" width="45%"
+alt="Screenshot of the app on a mobile device. A header poses the question 'Which pokémon has National Pokedex Number 544?'. Below this is a grid showing pokemon images and names."/>
 
 ---
 
