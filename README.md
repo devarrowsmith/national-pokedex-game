@@ -24,8 +24,10 @@ Rather than controlling the UI via direct DOM manipulation this version of the g
 
 ## Screenshots
 
-<img src="readme_images/mobile_screenshot_1.jpg" width="45%"
-alt="Screenshot of the app on a mobile device. A header poses the question 'Which pokémon has National Pokedex Number 544?'. Below this is a grid showing pokemon images and names."/>
+<img src="readme_assets/screen01.png" width="30%"
+alt="Screenshot of the app. A header poses the question 'Which pokémon has National Pokédex Number 805?'. The header also shows a reset button, three difficulty buttons and a lives counter. Below this is a grid showing Pokémon images and names."/> <img src="readme_assets/screen02.png" width="30%"
+alt="Screenshot of the app. Two of the pokémon in the grid have been clicked on. These were the wrong choices, and so their images have been replaced with images of the pokemon Ditto, under which is the text 'Try again!'. Two lives from the Lives counter have greyed out."/> <img src="readme_assets/screen03.png" width="30%"
+alt="Screenshot of the app. The correct Pokémon (Stakataka) has been selected. All Pokémon aside from the correct one have been replaced with images of the pokemon Victin, under which is the text 'You win!'. The header now shows the text 'You did it!'."/>
 
 ---
 
