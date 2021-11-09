@@ -1,25 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import ConditionalBlock from './ConditionalBlock';
+import grassBackground from '../assets/grass-background.png';
+import cloudBackground from '../assets/cloud-background.png'
+
+const parallax = keyframes`
+from {
+  background-position-x: 0px, 0px;
+}
+to {
+  background-position-x: 2160px, -1080px;
+}
+`;
 
 const GridContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  min-height: calc(100vh - 340px);
+  height: 100%;
+  margin-top: 340px;
+  background-image: url(${grassBackground}), url(${cloudBackground});
+  background-position: right bottom, left top;
+  background-repeat: repeat-x, repeat-x;
+  background-size: 800px 450px, 640px 360px;
+  bvackground-attachment: fixed, fixed;
+  animation: ${parallax} 160s linear infinite;
+  background-color: cornflowerblue;
 `;
 
 const StyledGrid = styled.div`
-  margin: 340px 0 0 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-
-  @media (min-height: 600px) {
-    margin: 340px 0 0 0;
-  }
 
   @media (min-width: 500px) {
     width: 500px;
@@ -27,7 +43,7 @@ const StyledGrid = styled.div`
 `;
 
 const Grid = ({ pokemonData, setPokemonData }) => (
-  <GridContainer>
+  <GridContainer className="test">
     <StyledGrid>
       {!pokemonData.pokemon[0]
         ? (<h1>loading...</h1>)
