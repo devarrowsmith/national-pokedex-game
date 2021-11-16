@@ -19,9 +19,9 @@ const GridContainer = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 340px);
+  min-height: calc(100vh - 330px);
   height: 100%;
-  margin-top: 340px;
+  margin-top: 330px;
   background-image: url(${grassBackground}), url(${cloudBackground});
   background-position: right bottom, left top;
   background-repeat: repeat-x, repeat-x;

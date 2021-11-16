@@ -17,10 +17,6 @@ const StyledHeader = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-
-  @media (min-height: 600px) {
-    height: 340px
-  }
 `;
 
 const Header = ({
