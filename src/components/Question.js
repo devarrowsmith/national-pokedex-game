@@ -16,7 +16,7 @@ const StyledQuestion = styled.h3`
 
 const Question = ({ answer }) => (
   <StyledQuestion>
-    Which Pokémon has National Pokedex Number
+    Which Pokémon has National Pokédex Number
     <span>
       {' '}
       {answer}
