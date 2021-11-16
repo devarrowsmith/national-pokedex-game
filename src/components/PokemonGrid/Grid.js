@@ -10,7 +10,7 @@ from {
   background-position-x: 0px, 0px;
 }
 to {
-  background-position-x: 2160px, -1080px;
+  background-position-x: 2400px, -640px;
 }
 `;
 
