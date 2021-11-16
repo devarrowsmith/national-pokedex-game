@@ -35,7 +35,13 @@ const StyledGrid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
+
+  h1 {
+    font-size: 2.8rem;
+    color: FFFF00;
+    text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+  }
 
   @media (min-width: 500px) {
     width: 500px;
