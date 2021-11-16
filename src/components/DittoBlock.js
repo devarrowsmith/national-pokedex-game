@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Block from './Block';
+import dittoSprite from '../assets/ditto.png';
 
 const StyledDittoBlock = styled(Block)`
 background-color: rgba(24, 24, 24, 0.5);
@@ -15,7 +16,7 @@ p {
 const DittoBlock = ({ disabled }) => (
   <StyledDittoBlock
     text="try again!"
-    sprite="http://devarrowsmith.github.io/national-pokedex-game/assets/ditto.png"
+    sprite={dittoSprite}
     disabled={disabled}
   />
 );

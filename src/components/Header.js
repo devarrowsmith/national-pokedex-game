@@ -57,6 +57,7 @@ Header.propTypes = {
     numPokemon: PropTypes.number.isRequired,
   }).isRequired,
   answer: PropTypes.number,
+  numSelected: PropTypes.number.isRequired,
   win: PropTypes.bool.isRequired,
   setDifficulty: PropTypes.func.isRequired,
   setBusy: PropTypes.func.isRequired,

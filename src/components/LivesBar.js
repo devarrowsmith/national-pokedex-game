@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledLivesBar = styled.div`
@@ -36,15 +37,17 @@ const StyledLivesBar = styled.div`
         }
 `;
 
-const LivesBar = ({ numSelected }) => {
-  return (
-    <StyledLivesBar>
-      <p>LIVES:</p>
-      <div className={numSelected > 0 ? 'grey-pip' : null} />
-      <div className={numSelected > 1 ? 'grey-pip' : null} />
-      <div className={numSelected > 2 ? 'grey-pip' : null} />
-    </StyledLivesBar>
-  );
+const LivesBar = ({ numSelected }) => (
+  <StyledLivesBar>
+    <p>LIVES:</p>
+    <div className={numSelected > 0 ? 'grey-pip' : null} />
+    <div className={numSelected > 1 ? 'grey-pip' : null} />
+    <div className={numSelected > 2 ? 'grey-pip' : null} />
+  </StyledLivesBar>
+);
+
+LivesBar.propTypes = {
+  numSelected: PropTypes.number.isRequired,
 };
 
 export default LivesBar;

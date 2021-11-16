@@ -21,15 +21,13 @@ const StyledSprite = styled.img`
     };
 `;
 
-const BlockSprite = ({ sprite, text, spriteClass }) => {
-  return (
-    <StyledSprite
-      src={sprite}
-      alt={text}
-      className={spriteClass}
-    />
-  );
-};
+const BlockSprite = ({ sprite, text, spriteClass }) => (
+  <StyledSprite
+    src={sprite}
+    alt={text}
+    className={spriteClass}
+  />
+);
 
 BlockSprite.defaultProps = {
   spriteClass: '',

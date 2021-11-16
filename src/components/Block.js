@@ -24,7 +24,7 @@ const StyledBlock = styled.button`
 `;
 
 const Block = ({
-  className, spriteClass, sprite, text, dexNumber, pokemonData, setPokemonData, win, disabled,
+  className, spriteClass, sprite, text, dexNumber, pokemonData, setPokemonData, disabled,
 }) => (
 
   <StyledBlock
@@ -48,6 +48,8 @@ Block.defaultProps = {
   className: '',
   dexNumber: 0,
   spriteClass: '',
+  pokemonData: [''],
+  setPokemonData: () => {},
 };
 
 Block.propTypes = {
@@ -61,8 +63,8 @@ Block.propTypes = {
     PropTypes.number,
     PropTypes.array,
     PropTypes.object,
-  ]).isRequired,
-  setPokemonData: PropTypes.func.isRequired,
+  ]),
+  setPokemonData: PropTypes.func,
   disabled: PropTypes.bool.isRequired,
 };
 

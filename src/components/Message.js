@@ -15,7 +15,9 @@ const MessageContainer = styled.div`
   align-items: center;
 `;
 
-const Message = ({ busy, answer, win, numSelected }) => {
+const Message = ({
+  busy, answer, win, numSelected,
+}) => {
   const loadingCondition = () => {
     if (busy) {
       return (
@@ -61,6 +63,7 @@ Message.propTypes = {
   busy: PropTypes.bool.isRequired,
   answer: PropTypes.number,
   win: PropTypes.bool.isRequired,
+  numSelected: PropTypes.number.isRequired,
 };
 
 export default Message;

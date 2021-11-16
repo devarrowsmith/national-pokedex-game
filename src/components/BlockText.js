@@ -26,6 +26,7 @@ const BlockText = ({ text, className }) => (
 
 BlockText.propTypes = {
   text: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default BlockText;
