@@ -7,11 +7,12 @@ const StyledButtonPlaceholder = styled.button`
   height: 40px;
   margin: 0 5px;
   padding: 0 10px;
-  border-radius: 10px;
-  color: maroon;
+  color: #141414;
   font-family: 'Bungee', sans-serif;
-  border: none;
-  background-color: white;
+  background: linear-gradient(180deg, rgba(255,248,210,1) 0%, rgba(255,201,1,1) 13%, rgba(255,210,1,1) 90%, rgba(125,117,0,1) 100%);
+  border: 2px solid #23211A;
+  border-radius: 4px;
+  cursor: pointer;
 `;
 
 const ButtonPlaceholder = ({ mode }) => (
