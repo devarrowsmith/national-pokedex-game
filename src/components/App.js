@@ -1,10 +1,50 @@
-import React from 'react';
-import Game from './Game';
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
+import Header from './Header';
+import Grid from './Grid';
+import refreshPokemonData from '../helpers/refreshPokemonData';
 
-function App() {
+const GameContainer = styled.div`
+min-width: 310px;
+`;
+
+const App = () => {
+  const [busy, setBusy] = useState(true);
+
+  const [difficulty, setDifficulty] = useState({
+    mode: 'easy',
+    numPokemon: 6,
+  });
+
+  const [pokemonData, setPokemonData] = useState({
+    answer: null,
+    selected: [],
+    numSelected: 0,
+    pokemon: [],
+    win: false,
+  });
+
+  useEffect(() => {
+    refreshPokemonData(setBusy, setPokemonData, difficulty);
+  }, [difficulty]);
+
   return (
-    <Game />
+    <GameContainer>
+      <Header
+        busy={busy}
+        answer={pokemonData.answer}
+        difficulty={difficulty}
+        numSelected={pokemonData.numSelected}
+        win={pokemonData.win}
+        setDifficulty={setDifficulty}
+        setBusy={setBusy}
+        setPokemonData={setPokemonData}
+      />
+      <Grid
+        pokemonData={pokemonData}
+        setPokemonData={setPokemonData}
+      />
+    </GameContainer>
   );
-}
-
+};
 export default App;
