@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import Block from './Block';
 
 const StyledDittoBlock = styled(Block)`
-background-color: #0c0b12;
+background-color: rgba(24, 24, 24, 0.5);
 
 p {
   color: #ec8af5;
-  background-color: #191926;
+  background: linear-gradient(180deg, rgba(182,182,182,1) 0%, rgba(78,78,78,1) 13%, rgba(102,102,102,1) 88%, rgba(61,61,61,1) 100%);
 }
 `;
 

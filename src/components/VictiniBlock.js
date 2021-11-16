@@ -5,7 +5,7 @@ import Block from './Block';
 import refreshPokemonData from '../helpers/refreshPokemonData';
 
 const StyledVictiniBlock = styled(Block)`
-background-color: #F5BB13;
+background-color: rgba(255, 226, 26, 0.8);
 
 p {
   color: #FFFFFF;
@@ -17,7 +17,7 @@ const VictiniBlock = ({ disabled }) => (
   <StyledVictiniBlock
     text="You Win!"
     sprite="http://devarrowsmith.github.io/national-pokedex-game/assets/victini.png"
-    spriteClass='victini'
+    spriteClass="victini"
     disabled={disabled}
   />
 );
