@@ -11,7 +11,7 @@ const StyledBlock = styled.button`
   width: 130px;
   margin: 10px;
   cursor: pointer;
-  background-color: ${(prop) => (prop.className === 'reveal-answer' ? '#D6D1CD' : 'RGBA(255, 255, 255, 0.2)')};
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(2px);
   border-radius: 20px;
   display: flex;
