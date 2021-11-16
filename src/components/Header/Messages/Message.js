@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Loading from './Loading';
-import Question from './Question';
+import LoadingMessage from './LoadingMessage';
+import QuestionMessage from './QuestionMessage';
 import WinMessage from './WinMessage';
 import LooseMessage from './LooseMessage';
 
@@ -22,7 +22,7 @@ const Message = ({
     if (busy) {
       return (
         <MessageContainer>
-          <Loading />
+          <LoadingMessage />
         </MessageContainer>
       );
     } if (win) {
@@ -41,7 +41,7 @@ const Message = ({
     }
     return (
       <MessageContainer>
-        <Question
+        <QuestionMessage
           answer={answer}
         />
       </MessageContainer>

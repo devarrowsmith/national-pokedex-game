@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Block from './Block';
-import victiniSprite from '../assets/victini.png';
+import victiniSprite from '../../../assets/victini.png';
 
 const StyledVictiniBlock = styled(Block)`
 background-color: rgba(255, 226, 26, 0.8);

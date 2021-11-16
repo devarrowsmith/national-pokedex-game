@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Header from './Header';
-import Grid from './Grid';
+import Header from './Header/Header';
+import Grid from './PokemonGrid/Grid';
 import refreshPokemonData from '../helpers/refreshPokemonData';
 
 const GameContainer = styled.div`

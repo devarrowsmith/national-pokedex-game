@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BlockSprite from './BlockSprite';
 import BlockText from './BlockText';
-import checkAnswer from '../helpers/checkAnswer';
+import checkAnswer from '../../../helpers/checkAnswer';
 
 const StyledBlock = styled.button`
   all: unset;

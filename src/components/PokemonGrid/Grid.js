@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-import ConditionalBlock from './ConditionalBlock';
-import grassBackground from '../assets/grass-background.png';
-import cloudBackground from '../assets/cloud-background.png';
+import ConditionalBlock from './Blocks/ConditionalBlock';
+import grassBackground from '../../assets/grass-background.png';
+import cloudBackground from '../../assets/cloud-background.png';
 
 const parallax = keyframes`
 from {

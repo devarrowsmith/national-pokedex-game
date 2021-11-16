@@ -14,7 +14,7 @@ const StyledQuestion = styled.h3`
   }
 `;
 
-const Question = ({ answer }) => (
+const QuestionMessage = ({ answer }) => (
   <StyledQuestion>
     Which Pokémon has National Pokédex Number
     <span>
@@ -26,12 +26,12 @@ const Question = ({ answer }) => (
   </StyledQuestion>
 );
 
-Question.defaultProps = {
+QuestionMessage.defaultProps = {
   answer: 0,
 };
 
-Question.propTypes = {
+QuestionMessage.propTypes = {
   answer: PropTypes.number,
 };
 
-export default Question;
+export default QuestionMessage;

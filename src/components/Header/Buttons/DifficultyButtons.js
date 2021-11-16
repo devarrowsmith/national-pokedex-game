@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
 import ButtonPlaceholder from './ButtonPlaceholder';
-import difficulties from '../helpers/difficulties';
+import difficulties from '../../../helpers/difficulties';
 
 const StyledButtonContainer = styled.div`
   height: 40px;

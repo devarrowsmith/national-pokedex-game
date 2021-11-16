@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Title from './Title';
-import Message from './Message';
-import SettingButtons from './SettingButtons';
+import Message from './Messages/Message';
+import SettingButtons from './Buttons/SettingButtons';
 import LivesBar from './LivesBar';
 
 const StyledHeader = styled.div`
