@@ -18,6 +18,7 @@ const GridContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
   min-height: calc(100vh - 340px);
   height: 100%;
   margin-top: 340px;
