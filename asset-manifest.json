@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/national-pokedex-game/static/js/main.bce5c66e.chunk.js",
-    "main.js.map": "/national-pokedex-game/static/js/main.bce5c66e.chunk.js.map",
+    "main.js": "/national-pokedex-game/static/js/main.ff67373a.chunk.js",
+    "main.js.map": "/national-pokedex-game/static/js/main.ff67373a.chunk.js.map",
     "runtime-main.js": "/national-pokedex-game/static/js/runtime-main.7b5d86c5.js",
     "runtime-main.js.map": "/national-pokedex-game/static/js/runtime-main.7b5d86c5.js.map",
     "static/js/2.08e1f857.chunk.js": "/national-pokedex-game/static/js/2.08e1f857.chunk.js",
     "static/js/2.08e1f857.chunk.js.map": "/national-pokedex-game/static/js/2.08e1f857.chunk.js.map",
     "index.html": "/national-pokedex-game/index.html",
-    "precache-manifest.a6b7baa9d143279dfe3f3c968466706c.js": "/national-pokedex-game/precache-manifest.a6b7baa9d143279dfe3f3c968466706c.js",
+    "precache-manifest.30ae4fd57e48d562023762472be2ce76.js": "/national-pokedex-game/precache-manifest.30ae4fd57e48d562023762472be2ce76.js",
     "service-worker.js": "/national-pokedex-game/service-worker.js",
     "static/js/2.08e1f857.chunk.js.LICENSE.txt": "/national-pokedex-game/static/js/2.08e1f857.chunk.js.LICENSE.txt",
     "static/media/cloud-background.png": "/national-pokedex-game/static/media/cloud-background.8cf0edc9.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.7b5d86c5.js",
     "static/js/2.08e1f857.chunk.js",
-    "static/js/main.bce5c66e.chunk.js"
+    "static/js/main.ff67373a.chunk.js"
   ]
 }
