@@ -15,7 +15,10 @@ const StyledBlockText = styled.p`
       : 'linear-gradient(180deg, rgba(219,83,83,1) 0%, rgba(196,20,20,1) 10%, rgba(255,0,0,1) 90%, rgba(138,11,11,1) 100%);'
   )};
   border-radius: 0 0 20px 20px;
-  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BlockText = ({ text, className }) => (
