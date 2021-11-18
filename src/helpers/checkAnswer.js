@@ -6,9 +6,7 @@ const checkAnswer = (dexNumber, pokemonData, setPokemonData) => (dexNumber === p
   : (setPokemonData((previousState) => ({
     ...previousState,
     selected: [...previousState.selected, dexNumber],
-    numSelected: (() => {
-      return previousState.numSelected + 1;
-    })(),
+    numSelected: (() => previousState.numSelected + 1)(),
   }))));
 
 export default checkAnswer;
